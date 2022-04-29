@@ -6,7 +6,7 @@ export const IncomeExpenses = () => {
 
     const { transactions } = useContext(GlobalContext);
 
-    const amounts = transactions.map(transaction => transactions.amount);
+    const amounts = transactions.map(transaction => transaction.amount);
 
     const income = amounts
         .filter(item => item > 0)
